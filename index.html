@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeleBot - São Paulo FC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Painel esquerdo -->
+    <div class="side-panel">
+
+        <figure>
+            <img src="./img/telebot.png" alt="TeleBot">
+        </figure>
+
+        <div id="controles">
+            <button id="iniciarBtn">Iniciar conversa</button>
+            <button id="limparBtn">Limpar</button>
+            <button id="encerrarBtn">Encerrar</button>
+        </div>
+
+    </div>
+
+    <!-- Chat -->
+    <div class="chat-container">
+
+        <header class="chat-header">
+            <h1>TeleBOT</h1>
+            <p>História, títulos e curiosidades do São Paulo FC</p>
+
+            <div id="connection-status" class="status-offline">
+                Desconectado
+            </div>
+        </header>
+
+        <div id="chat-box" class="chat-box"></div>
+
+        <footer class="chat-input-area">
+            <input
+                type="text"
+                id="message-input"
+                autocomplete="off"
+                placeholder="Pergunte algo sobre o São Paulo FC..."
+            >
+
+            <button id="send-button">
+                Enviar
+            </button>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
